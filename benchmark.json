@@ -1,0 +1,318 @@
+{
+  "system": "MVForge",
+  "version": "1.0.0",
+  "author": "晨星",
+  "config": {
+    "cca_components": 10,
+    "retrieval_topk": 5,
+    "non_inferiority_tol": 0.02
+  },
+  "datasets": [
+    {
+      "dataset": "gaussian_c0.30",
+      "n_samples": 600,
+      "n_views": 2,
+      "representation": {
+        "method": "classical_cca",
+        "n_components": 10,
+        "total_canonical_correlation": 4.6845,
+        "mvlearn_kcca_available": false
+      },
+      "retrieval": {
+        "method": "crossmodal",
+        "top1_accuracy": 0.0333,
+        "top5_accuracy": 0.0889,
+        "map": 0.0718,
+        "gallery_size": 600
+      },
+      "fusion": {
+        "single_view_0": {
+          "accuracy": 0.6556,
+          "macro_f1": 0.6545
+        },
+        "single_view_1": {
+          "accuracy": 0.6778,
+          "macro_f1": 0.6752
+        },
+        "early_fusion": {
+          "accuracy": 0.7167,
+          "macro_f1": 0.716
+        },
+        "late_fusion": {
+          "accuracy": 0.7167,
+          "macro_f1": 0.7156
+        },
+        "cca_knn": {
+          "accuracy": 0.6667,
+          "macro_f1": 0.6616
+        },
+        "modafuse": {
+          "accuracy": 0.7167,
+          "macro_f1": 0.716
+        },
+        "modafuse_report": {
+          "candidate_val_acc": {
+            "single_view_0": 0.6666666666666666,
+            "single_view_1": 0.6746031746031746,
+            "early_fusion": 0.746031746031746,
+            "late_fusion": 0.7380952380952381,
+            "cca_knn": 0.5793650793650794
+          },
+          "best_single": "single_view_1",
+          "best_single_val_acc": 0.6746031746031746,
+          "selected": [
+            "early_fusion"
+          ],
+          "ensemble_val_acc": 0.746031746031746
+        }
+      },
+      "modafuse_selection": {
+        "candidate_val_acc": {
+          "single_view_0": 0.6666666666666666,
+          "single_view_1": 0.6746031746031746,
+          "early_fusion": 0.746031746031746,
+          "late_fusion": 0.7380952380952381,
+          "cca_knn": 0.5793650793650794
+        },
+        "best_single": "single_view_1",
+        "best_single_val_acc": 0.6746031746031746,
+        "selected": [
+          "early_fusion"
+        ],
+        "ensemble_val_acc": 0.746031746031746
+      }
+    },
+    {
+      "dataset": "gaussian_c0.60",
+      "n_samples": 600,
+      "n_views": 2,
+      "representation": {
+        "method": "classical_cca",
+        "n_components": 10,
+        "total_canonical_correlation": 6.6435,
+        "mvlearn_kcca_available": false
+      },
+      "retrieval": {
+        "method": "crossmodal",
+        "top1_accuracy": 0.1222,
+        "top5_accuracy": 0.3333,
+        "map": 0.2332,
+        "gallery_size": 600
+      },
+      "fusion": {
+        "single_view_0": {
+          "accuracy": 0.75,
+          "macro_f1": 0.7494
+        },
+        "single_view_1": {
+          "accuracy": 0.8111,
+          "macro_f1": 0.8096
+        },
+        "early_fusion": {
+          "accuracy": 0.7944,
+          "macro_f1": 0.7939
+        },
+        "late_fusion": {
+          "accuracy": 0.8222,
+          "macro_f1": 0.8214
+        },
+        "cca_knn": {
+          "accuracy": 0.7222,
+          "macro_f1": 0.7205
+        },
+        "modafuse": {
+          "accuracy": 0.7944,
+          "macro_f1": 0.7939
+        },
+        "modafuse_report": {
+          "candidate_val_acc": {
+            "single_view_0": 0.7301587301587301,
+            "single_view_1": 0.7698412698412699,
+            "early_fusion": 0.8492063492063492,
+            "late_fusion": 0.8174603174603174,
+            "cca_knn": 0.6349206349206349
+          },
+          "best_single": "single_view_1",
+          "best_single_val_acc": 0.7698412698412699,
+          "selected": [
+            "early_fusion"
+          ],
+          "ensemble_val_acc": 0.8492063492063492
+        }
+      },
+      "modafuse_selection": {
+        "candidate_val_acc": {
+          "single_view_0": 0.7301587301587301,
+          "single_view_1": 0.7698412698412699,
+          "early_fusion": 0.8492063492063492,
+          "late_fusion": 0.8174603174603174,
+          "cca_knn": 0.6349206349206349
+        },
+        "best_single": "single_view_1",
+        "best_single_val_acc": 0.7698412698412699,
+        "selected": [
+          "early_fusion"
+        ],
+        "ensemble_val_acc": 0.8492063492063492
+      }
+    },
+    {
+      "dataset": "gaussian_c0.90",
+      "n_samples": 600,
+      "n_views": 2,
+      "representation": {
+        "method": "classical_cca",
+        "n_components": 10,
+        "total_canonical_correlation": 8.1657,
+        "mvlearn_kcca_available": false
+      },
+      "retrieval": {
+        "method": "crossmodal",
+        "top1_accuracy": 0.4889,
+        "top5_accuracy": 0.6889,
+        "map": 0.5835,
+        "gallery_size": 600
+      },
+      "fusion": {
+        "single_view_0": {
+          "accuracy": 0.7833,
+          "macro_f1": 0.7818
+        },
+        "single_view_1": {
+          "accuracy": 0.8222,
+          "macro_f1": 0.82
+        },
+        "early_fusion": {
+          "accuracy": 0.8278,
+          "macro_f1": 0.8258
+        },
+        "late_fusion": {
+          "accuracy": 0.8444,
+          "macro_f1": 0.8435
+        },
+        "cca_knn": {
+          "accuracy": 0.7444,
+          "macro_f1": 0.7442
+        },
+        "modafuse": {
+          "accuracy": 0.8556,
+          "macro_f1": 0.8544
+        },
+        "modafuse_report": {
+          "candidate_val_acc": {
+            "single_view_0": 0.8015873015873016,
+            "single_view_1": 0.8412698412698413,
+            "early_fusion": 0.8571428571428571,
+            "late_fusion": 0.8492063492063492,
+            "cca_knn": 0.6984126984126984
+          },
+          "best_single": "single_view_1",
+          "best_single_val_acc": 0.8412698412698413,
+          "selected": [
+            "single_view_1",
+            "early_fusion"
+          ],
+          "ensemble_val_acc": 0.8650793650793651
+        }
+      },
+      "modafuse_selection": {
+        "candidate_val_acc": {
+          "single_view_0": 0.8015873015873016,
+          "single_view_1": 0.8412698412698413,
+          "early_fusion": 0.8571428571428571,
+          "late_fusion": 0.8492063492063492,
+          "cca_knn": 0.6984126984126984
+        },
+        "best_single": "single_view_1",
+        "best_single_val_acc": 0.8412698412698413,
+        "selected": [
+          "single_view_1",
+          "early_fusion"
+        ],
+        "ensemble_val_acc": 0.8650793650793651
+      }
+    },
+    {
+      "dataset": "digits_two_view",
+      "n_samples": 1797,
+      "n_views": 2,
+      "representation": {
+        "method": "classical_cca",
+        "n_components": 10,
+        "total_canonical_correlation": 7.1388,
+        "mvlearn_kcca_available": false
+      },
+      "retrieval": {
+        "method": "crossmodal",
+        "top1_accuracy": 0.0278,
+        "top5_accuracy": 0.1373,
+        "map": 0.0956,
+        "gallery_size": 1797
+      },
+      "fusion": {
+        "single_view_0": {
+          "accuracy": 0.8942,
+          "macro_f1": 0.8947
+        },
+        "single_view_1": {
+          "accuracy": 0.8961,
+          "macro_f1": 0.8929
+        },
+        "early_fusion": {
+          "accuracy": 0.9722,
+          "macro_f1": 0.9716
+        },
+        "late_fusion": {
+          "accuracy": 0.9759,
+          "macro_f1": 0.9758
+        },
+        "cca_knn": {
+          "accuracy": 0.8831,
+          "macro_f1": 0.8798
+        },
+        "modafuse": {
+          "accuracy": 0.9722,
+          "macro_f1": 0.9716
+        },
+        "modafuse_report": {
+          "candidate_val_acc": {
+            "single_view_0": 0.8806366047745358,
+            "single_view_1": 0.8885941644562334,
+            "early_fusion": 0.9734748010610079,
+            "late_fusion": 0.9708222811671088,
+            "cca_knn": 0.8328912466843501
+          },
+          "best_single": "single_view_1",
+          "best_single_val_acc": 0.8885941644562334,
+          "selected": [
+            "early_fusion"
+          ],
+          "ensemble_val_acc": 0.9734748010610079
+        }
+      },
+      "modafuse_selection": {
+        "candidate_val_acc": {
+          "single_view_0": 0.8806366047745358,
+          "single_view_1": 0.8885941644562334,
+          "early_fusion": 0.9734748010610079,
+          "late_fusion": 0.9708222811671088,
+          "cca_knn": 0.8328912466843501
+        },
+        "best_single": "single_view_1",
+        "best_single_val_acc": 0.8885941644562334,
+        "selected": [
+          "early_fusion"
+        ],
+        "ensemble_val_acc": 0.9734748010610079
+      }
+    }
+  ],
+  "summary": {
+    "avg_total_canonical_correlation": 6.6581,
+    "avg_retrieval_top1": 0.1681,
+    "avg_retrieval_map": 0.246,
+    "avg_modafuse_accuracy": 0.8347,
+    "avg_early_fusion_accuracy": 0.8278,
+    "avg_best_single_accuracy": 0.8018
+  }
+}

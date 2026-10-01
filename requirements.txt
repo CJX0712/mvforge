@@ -1,0 +1,10 @@
+# MVForge 运行与测试核心依赖 (版本锁定是正确性的一部分)
+numpy==2.5.3
+scipy==1.16.3
+scikit-learn==1.6.1
+pytest==8.3.4
+
+# 可选 SOTA 后端 (缺失时自动降级, 不影响系统可运行性):
+#   mvlearn  - 多视图 CCA / KMCCA / DCCA + 多视图分类 (顶级开源)
+#   torch    - DeepCCA 深度非线性表征
+# 安装可选后端:  pip install mvlearn torch
